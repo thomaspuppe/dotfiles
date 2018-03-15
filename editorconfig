@@ -1,0 +1,31 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# Editor Support (http://editorconfig.org/#download)
+# Sublime: via Plugin https://github.com/sindresorhus/editorconfig-sublime#readme
+#
+
+
+# top-most EditorConfig file
+# When opening a file, EditorConfig plugins look for a file named
+# .editorconfig in the directory of the opened file and in every parent
+# directory. A search for .editorconfig files will stop if the root filepath
+# is reached or an EditorConfig file with root=true is found.
+root = true
+
+# Set default charset
+charset = utf-8
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Tab indentation and trim trailing whitespace for SASS/SCSS
+[*.s{a,c}ss]
+indent_style = tab
+trim_trailing_whitespace = true
+
+# 4 space indentation for Python and HTML/Jinja files
+[*.{py,html,js}]
+indent_style = space
+indent_size = 4
