@@ -13,3 +13,7 @@ brew cask install alfred
 brew cask install dropbox
 brew cask install keepassx
 brew cask install iterm2
+
+brew install node
+brew install yarn
+
