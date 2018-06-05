@@ -14,9 +14,18 @@ brew cask install dropbox
 brew cask install keepassx
 brew cask install iterm2
 brew cask install slack
+brew cask install sublime-text
+
+brew cask install virtualbox
+brew cask install vagrant
 
 brew install node
 brew install yarn
+
+
+echo Install supporting libs
+echo ========================
+brew install gnuplot # for gitstats
 
 
 echo Install global npm tools
