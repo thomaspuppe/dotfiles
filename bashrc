@@ -59,7 +59,6 @@ alias x='open -a finder $PWD'
 alias textedit='open -a TextEdit'
 
 # opens bash config file in gedit (terminal can be closed without closing gedit)
-#alias bashconf='open -a TextEdit ~/.bashrc'
 alias bashconf='sublime ~/.bashrc'
 
 # start local HTTP server from current directory
@@ -93,3 +92,9 @@ alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-
 # TODO: automatisiert installieren und nicht hier über die Checklist
 # ######################################
 # https://github.com/kamranahmedse/git-standup
+
+
+# ######################################
+# project specific aliases
+# ######################################
+alias cddch='cd ~/code/dch/dch-website/'
