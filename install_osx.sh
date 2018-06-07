@@ -15,6 +15,7 @@ brew cask install keepassx
 brew cask install iterm2
 brew cask install slack
 brew cask install sublime-text
+brew cask install spotify
 
 brew cask install virtualbox
 brew cask install vagrant
