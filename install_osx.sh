@@ -34,4 +34,5 @@ brew install gnuplot # for gitstats
 echo Install global npm tools
 echo ========================
 npm install webcoach -g
+npm install pa11y -g
 
