@@ -1,4 +1,9 @@
 # ######################################
+# Basics
+# ######################################
+export INPUTRC=~/.inputrc
+
+# ######################################
 # Functions and Parameters for Own Aliases
 # ######################################
 
@@ -20,6 +25,7 @@ NO_COLOR="\[\033[0m\]"
 alf()
 {
     alias | grep "$1"
+    declare -F | grep "$1"
 }
 
 # notes finder
@@ -59,7 +65,7 @@ alias x='open -a finder $PWD'
 alias textedit='open -a TextEdit'
 
 # opens bash config file in gedit (terminal can be closed without closing gedit)
-alias bashconf='sublime ~/.bashrc'
+alias bashconf='subl ~/.bashrc'
 
 # start local HTTP server from current directory
 alias localserver='python -m SimpleHTTPServer 8080'
@@ -98,3 +104,10 @@ alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-
 # project specific aliases
 # ######################################
 alias cddch='cd ~/code/dch/dch-website/'
+alias cdrec='cd ~/code/rec/magento_ce/'
+
+scpdch1() { scp ./$1 bph_puppe@dev1:/var/www/website/$1; }
+scprec1() { scp ./$1 bph_puppe@dev1:/var/www/shop/$1; }
+
+scpdch2() { scp ./$1 bph_puppe@dev2:/var/www/website/$1; }
+scprec2() { scp ./$1 bph_puppe@dev2:/var/www/shop/$1; }
