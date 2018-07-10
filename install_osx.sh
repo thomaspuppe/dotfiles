@@ -5,8 +5,6 @@
 #brew tap caskroom/cask
 #brew install brew-cask
 
-brew install autojump
-
 brew cask install firefox
 brew cask install google-chrome
 brew cask install opera
@@ -24,6 +22,11 @@ brew cask install vagrant
 
 brew install node
 brew install yarn
+
+echo Install nice utilities
+echo ======================
+brew install autojump
+brew install httpie
 
 
 echo Install supporting libs
