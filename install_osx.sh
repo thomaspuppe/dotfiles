@@ -38,4 +38,5 @@ echo Install global npm tools
 echo ========================
 npm install webcoach -g
 npm install pa11y -g
-
+npm install html-validator-cli -g
+npm install broken-link-checker -g
