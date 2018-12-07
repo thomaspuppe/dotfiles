@@ -15,7 +15,7 @@ brew cask install iterm2
 brew cask install slack
 brew cask install sublime-text
 brew cask install spotify
-brew cask install visual-studio-code
+#brew cask install visual-studio-code
 
 brew cask install virtualbox
 brew cask install vagrant
@@ -31,7 +31,7 @@ brew install httpie
 
 echo Install supporting libs
 echo ========================
-brew install gnuplot # for gitstats
+#brew install gnuplot # for gitstats
 
 
 echo Install global npm tools
@@ -40,3 +40,4 @@ npm install webcoach -g
 npm install pa11y -g
 npm install html-validator-cli -g
 npm install broken-link-checker -g
+npm install caniuse-cmd -g
