@@ -1,17 +1,10 @@
 # dotfiles
 
-my dotfiles. workflow heavily inspired by (or rather copied from) https://github.com/mathiasbynens/dotfiles
+my dotfiles. workflow heavily inspired by (or rather copied from) https://github.com/mathiasbynens/dotfiles and https://github.com/ZeitOnline/frontend-mac-setup
 
 
 ## Installation
 
-    git clone https://github.com/thomaspuppe/dotfiles.git && cd dotfiles && source bootstrap.sh
+    git clone https://github.com/thomaspuppe/dotfiles.git && cd dotfiles && sh setup.sh
 
-To update, cd into your local dotfiles repository and then:
-
-    source bootstrap.sh
-
-Alternatively, to update while avoiding the confirmation prompt:
-
-    set -- -f; source bootstrap.sh
 

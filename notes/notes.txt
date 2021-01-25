@@ -1,0 +1,50 @@
+# Sublime Plugins
+
+- Git (kemayo)
+- GitGutter (jisaacks)
+
+- EditorConfig
+- Formatter
+- Git blame
+- GitGutter
+- SublimeLinter-flake8
+- (Svelte)
+- (SVG Preview)
+
+# VS Code Plugins 
+
+- ESLint
+- LiveShare
+Nunjucks Template
+Prettier - Code Formatter
+Sass
+SQLite
+StandardJS
+Svelte for VSCode
+
+
+# Atom Plugins 
+
+Theme: "One Light" for UI and Syntax
+
+- language-markdown
+
+
+# Weitere
+
+- Sublime Theme(s) und Settings
+- VS Code Theme und Settings
+
+- Chrome Extensions
+- FF Extensions
+
+- Opera Feed List
+
+- Chrome Bookmarks
+- FF Bookmarks
+
+- Kalender- Abos (technik-urlaubskalender.zeit.de , Teamkalender, ...)
+
+- Fish Shell Settings, Functions, Prompt
+
+

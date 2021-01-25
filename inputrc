@@ -1,6 +1,0 @@
-# ######################################
-# Arrow-History with partial search
-# ######################################
-
-"\e[A": history-search-backward            # arrow up
-"\e[B": history-search-forward             # arrow down

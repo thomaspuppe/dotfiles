@@ -1,0 +1,11 @@
+[user]
+	name = thomaspuppe
+	email = info@thomaspuppe.de
+[branch]
+	autosetupmerge = true
+[push]
+	default = current
+[merge]
+	defaultToUpstream = true
+[submodule]
+	recurse = true
