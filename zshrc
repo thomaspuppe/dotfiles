@@ -139,8 +139,8 @@ alias zshr="source ~/.zshrc" # reload zsh config
 
 alias ll="ls -lah"
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
 
 alias gd="git diff"
 alias gc="git commit"
@@ -165,6 +165,10 @@ shpwd() {
 }
 #PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})%~%{$fg_bold[blue]%}$(git_super_status)%{$reset_color%} $(shpwd)'
 PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})$(shpwd) $fg_bold[blue]%}$(git_super_status)%{$reset_color%} $ '
+
+# optimize: make it more like fish
+# - ls: files white, directories blue, executables red
+# - autosuggest in grau vorschagen für eindeutige Eingaben (https://github.com/zsh-users/zsh-autosuggestions ?)
 
 # For manually installed software like kustomize
 export PATH="/usr/local/sbin:$PATH"
