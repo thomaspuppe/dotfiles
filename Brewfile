@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/cask-fonts"
 
 # Brew extensions and helper
 # Install applications from Mac App Store
@@ -105,7 +106,7 @@ brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
-#broken# cask "font-fira-code"
+cask "font-fira-code"
 
 # Install manually:
 # Pocket
