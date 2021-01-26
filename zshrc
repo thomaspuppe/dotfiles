@@ -12,7 +12,7 @@ export ZSH="/Users/puppe/.oh-my-zsh"
 ZSH_THEME="simple"
 #ZSH_THEME=random
 #ZSH_THEME_RANDOM_IGNORED=(3den adben amuse arrow aussiegeek bira blinks crunch cypher dallas daveverwer dogenpunk duellj essembeh evan fino fino-time funky fwalch gallois garyblessington gianu gnzh humza imajes josh jreese jtriley kafeitu kphoen lukerandall miloshadzic mira mlh nanotech re5et rkj robbyrussell sammy smt sonicradish sorin terminalparty theunraveler tjkirch_mod trapd00r wedisagree tonotdo wezm wuffers ys)
-# okay themes: 
+# okay themes:
 # - avit: nice und simpel. zu simpel?
 # - kolo: entspannt, gute git Ansicht. Pfad zu kurz und % als Bang-Zeichen. Und schlimme Farben (alles pink)
 # - macovsky-ruby okay, unaufgeregt, git fehlt.
@@ -21,7 +21,7 @@ ZSH_THEME="simple"
 # - strug: zeigt auch den Remote tracking Branch
 # - sunaku: hübsch und simpel, nur die Reihenfolge falsch
 # - sunrise: git-prompt vielversprechend. Farben schimm.
-# Bedingungen: git prompt, 
+# Bedingungen: git prompt,
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -158,13 +158,19 @@ alias zontest="zonroot; bin/test"
 alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-|g" | sed "s|<[^>]*>||g"'
 
 
-# Config the git-prompt (https://github.com/woefe/git-prompt.zsh#appearance)
-# echo ${${:-/${(j:/:)${(M)${(s:/:)${(D)PWD:h}}#(|.)[^.]}}/${PWD:t}}//\/~/\~}
+# Config the prompt
+# https://github.com/ohmyzsh/ohmyzsh/issues/5068 , alternative: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/shrink-path
 shpwd() {
   echo ${${:-/${(j:/:)${(M)${(s:/:)${(D)PWD:h}}#(|.)[^.]}}/${PWD:t}}//\/~/\~}
 }
 #PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})%~%{$fg_bold[blue]%}$(git_super_status)%{$reset_color%} $(shpwd)'
 PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})$(shpwd) $fg_bold[blue]%}$(git_super_status)%{$reset_color%} $ '
+# https://github.com/woefe/git-prompt.zsh
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✔"
+ZSH_GIT_PROMPT_SHOW_UPSTREAM="full"
+ZSH_THEME_GIT_PROMPT_UPSTREAM_SYMBOL="%{$fg_bold[yellow]%}⟳ "
+ZSH_THEME_GIT_PROMPT_UPSTREAM_PREFIX="%{$fg[yellow]%} ⤳ "
+ZSH_THEME_GIT_PROMPT_UPSTREAM_SUFFIX=""
 
 # optimize: make it more like fish
 # - ls: files white, directories blue, executables red
