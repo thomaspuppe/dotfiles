@@ -34,7 +34,7 @@ brew "wget"
 
 # Browsers
 #already-preinstalled# cask "firefox"
-#cask "firefoxnightly"
+cask "firefox-nightly"
 #cask "firefox-developer-edition"
 #already-preinstalled# cask "google-chrome"
 #cask "google-chrome-canary"
@@ -53,6 +53,7 @@ cask "visual-studio-code"
 # Version Control
 brew "git"
 brew "git-trim"
+brew "gh" # https://cli.github.com/
 
 # Documentation
 brew "sphinx-doc"
@@ -73,7 +74,7 @@ cask "thunderbird"
 cask "keybase"
 cask "stretchly"
 cask "numi"
-
+cask "notion"
 cask "zoom"
 #already-preinstalled# cask "slack"
 #already-preinstalled# cask "starleaf"
@@ -89,12 +90,14 @@ cask "zoom"
 # useful shell tools
 #brew "ack"
 brew "bat"
+brew "bit-git"
 brew "httpie"
 #brew "autojump"#comes via zsh "z" plugin
 #brew "ssh-copy-id"
 #cask "ngrok"
 #brew "ffmpeg"
 #brew "imagemagick"
+cask "docker"
 brew "kubernetes-cli"
 #brew "kustomize" # :-( https://github.com/ZeitOnline/zeit.web/commit/069b233
 

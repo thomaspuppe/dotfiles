@@ -89,7 +89,7 @@ export HISTTIMEFORMAT="[%F %T] "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt z zsh-autosuggestions)
+plugins=(git git-prompt npm z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -146,6 +146,7 @@ alias gd="git diff"
 alias gc="git commit"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gs="git status"
+alias gfb="git fetch --all && git branch --all"
 
 alias zonroot="cd /Users/puppe/Code/zon/friedbert-deployment"
 alias zoncode="zonroot; cd ./work/source/zeit.web"
@@ -156,7 +157,7 @@ alias zonserve-production="zonroot; bin/serve production --reload"
 alias zontest="zonroot; bin/test"
 
 alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-|g" | sed "s|<[^>]*>||g"'
-
+alias localserver='python -m http.server 8000'
 
 # Config the prompt
 # https://github.com/ohmyzsh/ohmyzsh/issues/5068 , alternative: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/shrink-path
@@ -178,3 +179,11 @@ ZSH_THEME_GIT_PROMPT_UPSTREAM_SUFFIX=""
 
 # For manually installed software like kustomize
 export PATH="/usr/local/sbin:$PATH"
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/bit bit
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/puppe/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/puppe/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

@@ -11,7 +11,7 @@
 - (Svelte)
 - (SVG Preview)
 
-# VS Code Plugins 
+# VS Code Plugins
 
 - ESLint
 - LiveShare
@@ -23,9 +23,9 @@ StandardJS
 Svelte for VSCode
 
 
-# Atom Plugins 
+# Atom Plugins
 
-Theme: "One Light" for UI and Syntax
+Theme: "One Light" for UI and Syntax. Fira Code Font.
 
 - language-markdown
 
@@ -48,3 +48,13 @@ Theme: "One Light" for UI and Syntax
 - Fish Shell Settings, Functions, Prompt
 
 
+# Chrome Extensions
+- Accessibility Insights
+- AMP Validator
+- axe
+- BrowserStack
+- CSS Feature Toggles
+- Checkbot
+- HTML5 Outliner
+- Modify Headers for Google Chrome
+- Performance-Analyser
