@@ -54,6 +54,7 @@ cask "visual-studio-code"
 brew "git"
 brew "git-trim"
 brew "gh" # https://cli.github.com/
+brew "git-quick-stats"
 
 # Documentation
 brew "sphinx-doc"
