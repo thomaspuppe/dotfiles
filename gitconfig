@@ -15,5 +15,6 @@
 	branch = false
 [core]
 	pager = less -F -X
+	editor = subl -n -w
 [init]
 	defaultBranch = main
