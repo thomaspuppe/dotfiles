@@ -142,7 +142,8 @@ alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
 
-alias gd="git diff"
+# https://github.com/banga/git-split-diffs
+alias gd="git diff | git-split-diffs --color"
 alias gc="git commit"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gs="git status"
