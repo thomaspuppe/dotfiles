@@ -100,6 +100,7 @@ brew "httpie"
 #brew "imagemagick"
 cask "docker"
 brew "kubernetes-cli"
+brew "tfenv"
 #brew "kustomize" # :-( https://github.com/ZeitOnline/zeit.web/commit/069b233
 
 cask "insomnia"
