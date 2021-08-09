@@ -98,9 +98,11 @@ brew "httpie"
 #cask "ngrok"
 #brew "ffmpeg"
 #brew "imagemagick"
+brew "pipenv"
 cask "docker"
 brew "kubernetes-cli"
 brew "tfenv"
+brew "vault"
 #brew "kustomize" # :-( https://github.com/ZeitOnline/zeit.web/commit/069b233
 
 cask "insomnia"
