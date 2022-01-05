@@ -158,6 +158,7 @@ alias zonserve-production="zonroot; bin/serve production --reload"
 alias zontest="zonroot; bin/test"
 
 alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-|g" | sed "s|<[^>]*>||g"'
+alias co='ssh -p 2222 ssh.caarlos0.dev' # https://github.com/maaslalani/confetty
 alias localserver='python -m http.server 8000'
 
 # Config the prompt
