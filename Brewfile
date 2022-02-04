@@ -37,7 +37,7 @@ brew "wget"
 cask "firefox-nightly"
 #cask "firefox-developer-edition"
 #already-preinstalled# cask "google-chrome"
-#cask "google-chrome-canary"
+cask "google-chrome-canary"
 cask "opera"
 
 # chromium is mandatory for testing purposes
