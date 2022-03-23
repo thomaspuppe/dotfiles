@@ -9,7 +9,8 @@ export ZSH="/Users/puppe/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="simple"
+ZSH_THEME=""
+#ZSH_THEME="simple" # before PURE
 #ZSH_THEME=random
 #ZSH_THEME_RANDOM_IGNORED=(3den adben amuse arrow aussiegeek bira blinks crunch cypher dallas daveverwer dogenpunk duellj essembeh evan fino fino-time funky fwalch gallois garyblessington gianu gnzh humza imajes josh jreese jtriley kafeitu kphoen lukerandall miloshadzic mira mlh nanotech re5et rkj robbyrussell sammy smt sonicradish sorin terminalparty theunraveler tjkirch_mod trapd00r wedisagree tonotdo wezm wuffers ys)
 # okay themes:
@@ -89,7 +90,7 @@ export HISTTIMEFORMAT="[%F %T] "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt npm z)
+plugins=(git npm z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,17 +122,16 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Display execution time in prompt
-function preexec() {
-  timer=${timer:-$SECONDS}
-}
-
-function precmd() {
-  if [ $timer ]; then
-    timer_show=$(($SECONDS - $timer))
-    export RPROMPT="%F{blue}[ ${timer_show}s | %T ]%{$reset_color%}"
-    unset timer
-  fi
-}
+# function preexec() {
+#   timer=${timer:-$SECONDS}
+# }
+# function precmd() {
+#   if [ $timer ]; then
+#     timer_show=$(($SECONDS - $timer))
+#     export RPROMPT="%F{blue}[ ${timer_show}s | %T ]%{$reset_color%}"
+#     unset timer
+#   fi
+# }
 
 # Aliases
 
@@ -167,13 +167,13 @@ shpwd() {
   echo ${${:-/${(j:/:)${(M)${(s:/:)${(D)PWD:h}}#(|.)[^.]}}/${PWD:t}}//\/~/\~}
 }
 #PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})%~%{$fg_bold[blue]%}$(git_super_status)%{$reset_color%} $(shpwd)'
-PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})$(shpwd) $fg_bold[blue]%}$(git_super_status)%{$reset_color%} $ '
+# PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})$(shpwd) $fg_bold[blue]%}$(git_super_status)%{$reset_color%} $ '
 # https://github.com/woefe/git-prompt.zsh
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✔"
-ZSH_GIT_PROMPT_SHOW_UPSTREAM="full"
-ZSH_THEME_GIT_PROMPT_UPSTREAM_SYMBOL="%{$fg_bold[yellow]%}⟳ "
-ZSH_THEME_GIT_PROMPT_UPSTREAM_PREFIX="%{$fg[yellow]%} ⤳ "
-ZSH_THEME_GIT_PROMPT_UPSTREAM_SUFFIX=""
+# ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✔"
+# ZSH_GIT_PROMPT_SHOW_UPSTREAM="full"
+# ZSH_THEME_GIT_PROMPT_UPSTREAM_SYMBOL="%{$fg_bold[yellow]%}⟳ "
+# ZSH_THEME_GIT_PROMPT_UPSTREAM_PREFIX="%{$fg[yellow]%} ⤳ "
+# ZSH_THEME_GIT_PROMPT_UPSTREAM_SUFFIX=""
 
 # optimize: make it more like fish
 # - ls: files white, directories blue, executables red
@@ -189,3 +189,6 @@ if [ -f '/Users/puppe/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U promptinit; promptinit
+prompt pure

@@ -112,6 +112,7 @@ cask "insomnia-designer"
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
+brew "pure" # pure shell https://github.com/sindresorhus/pure
 
 cask "font-fira-code"
 
