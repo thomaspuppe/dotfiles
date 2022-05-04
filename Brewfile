@@ -39,6 +39,7 @@ cask "firefox-nightly"
 #already-preinstalled# cask "google-chrome"
 cask "google-chrome-canary"
 cask "opera"
+cask "brave-browser"
 
 # chromium is mandatory for testing purposes
 cask "chromium"

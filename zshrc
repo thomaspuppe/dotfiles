@@ -148,6 +148,9 @@ alias gc="git commit"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gs="git status"
 alias gfb="git fetch --all && git branch --all"
+alias gfa="git fetch --all"
+alias gba="git branch --all"
+alias gbh="git branch --all | grep hennes"
 
 alias zonroot="cd /Users/puppe/Code/zon/friedbert-deployment"
 alias zoncode="zonroot; cd ./work/source/zeit.web"
@@ -192,3 +195,5 @@ if [ -f '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '
 
 autoload -U promptinit; promptinit
 prompt pure
+
+export PATH="$PATH:~/Code/zon/docs-env/bin"
