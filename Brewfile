@@ -11,13 +11,9 @@ brew "mas"
 
 # Python
 # we need to install different versions
-# brew install python
-# brew install python@3.7
-# brew pin python@3.7
-# brew link --overwrite --force python@3.7
-# add "/usr/local/opt/python@3.7/libexec/bin" to path
 brew "python"
-brew "python@3.7", link: true
+# brew "python@3.7", link: true
+brew "python@3.10", link: true
 
 # zon dev environment
 brew "graphviz"
@@ -39,7 +35,7 @@ cask "firefox-nightly"
 #already-preinstalled# cask "google-chrome"
 cask "google-chrome-canary"
 cask "opera"
-cask "brave-browser"
+# cask "brave-browser"
 
 # chromium is mandatory for testing purposes
 cask "chromium"
@@ -47,9 +43,9 @@ brew "geckodriver"
 cask "chromedriver"
 
 # IDE/Editors
-cask "atom"
 cask "sublime-text"
 cask "visual-studio-code"
+cask "obsidian"
 
 # Version Control
 brew "git"
@@ -64,9 +60,7 @@ brew "sphinx-doc"
 #cask "google-drive"
 
 # useful mac software
-cask "tunnelblick"
 cask "iterm2"
-cask "dropbox"
 cask "alfred"
 cask "spotify"
 cask "keepassxc"
@@ -74,12 +68,12 @@ cask "spectacle"
 cask "glyphfinder"
 cask "thunderbird"
 cask "keybase"
-cask "stretchly"
+#cask "stretchly"
 cask "numi"
-cask "notion"
+#cask "notion"
 cask "zoom"
+#cask "kap"
 #already-preinstalled# cask "slack"
-#already-preinstalled# cask "starleaf"
 
 #cask "appcleaner"
 #cask "colour-contrast-analyser"
@@ -88,11 +82,11 @@ cask "zoom"
 #cask "openoffice"
 #cask "postgres"
 
-
 # useful shell tools
 #brew "ack"
 brew "bat"
-brew "bit-git"
+#brew "bit-git"
+brew "cheat"
 brew "httpie"
 #brew "autojump"#comes via zsh "z" plugin
 #brew "ssh-copy-id"
@@ -108,6 +102,7 @@ brew "vault"
 
 cask "insomnia"
 cask "insomnia-designer"
+cask "responsively"
 
 # zsh shell
 brew "zsh"

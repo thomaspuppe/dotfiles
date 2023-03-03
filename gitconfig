@@ -18,3 +18,5 @@
 	editor = subl -n -w
 [init]
 	defaultBranch = main
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs

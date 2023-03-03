@@ -197,3 +197,4 @@ autoload -U promptinit; promptinit
 prompt pure
 
 export PATH="$PATH:~/Code/zon/docs-env/bin"
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
