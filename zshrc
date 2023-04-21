@@ -151,6 +151,8 @@ alias gfb="git fetch --all && git branch --all"
 alias gfa="git fetch --all"
 alias gba="git branch --all"
 alias gbh="git branch --all | grep hennes"
+alias gweek="git log --pretty=format:"%ad:%d:%s" --date=short --reverse --all --since=1.week.ago --author=thomaspuppe"
+alias gday="git log --pretty=format:"%ad:%d:%s" --date=short --reverse --all --since=1.day.ago --author=thomaspuppe"
 
 alias zonroot="cd /Users/puppe/Code/zon/friedbert-deployment"
 alias zoncode="zonroot; cd ./work/source/zeit.web"
@@ -161,7 +163,7 @@ alias zonserve-production="zonroot; bin/serve production --reload"
 alias zontest="zonroot; bin/test"
 
 alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-|g" | sed "s|<[^>]*>||g"'
-alias co='ssh -p 2222 ssh.caarlos0.dev' # https://github.com/maaslalani/confetty
+alias confetti='ssh -p 2222 ssh.caarlos0.dev' # https://github.com/maaslalani/confetty
 alias localserver='python -m http.server 8000'
 
 # Config the prompt
