@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/puppe/.oh-my-zsh"
+export ZSH="/Users/thomas.puppe/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -146,15 +146,15 @@ alias ..3="cd ../../.."
 alias gd="git diff | git-split-diffs --color"
 alias gc="git commit"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
+alias gp="git pull --rebase"
 alias gs="git status"
 alias gfb="git fetch --all && git branch --all"
 alias gfa="git fetch --all"
 alias gba="git branch --all"
-alias gbh="git branch --all | grep hennes"
 alias gweek="git log --pretty=format:"%ad:%d:%s" --date=short --reverse --all --since=1.week.ago --author=thomaspuppe"
 alias gday="git log --pretty=format:"%ad:%d:%s" --date=short --reverse --all --since=1.day.ago --author=thomaspuppe"
 
-alias zonroot="cd /Users/puppe/Code/zon/friedbert-deployment"
+alias zonroot="cd /Users/thomas.puppe/Code/friedbert-deployment"
 alias zoncode="zonroot; cd ./work/source/zeit.web"
 alias zonbuild="zonroot; batou/deploy local"
 alias zonserve="zonroot; bin/serve --reload"
@@ -189,14 +189,21 @@ export PATH="/usr/local/sbin:$PATH"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/bit bit
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/puppe/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/puppe/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/puppe/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-autoload -U promptinit; promptinit
+# Activate https://github.com/sindresorhus/pure 
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+autoload -Uz promptinit
+promptinit
 prompt pure
 
-export PATH="$PATH:~/Code/zon/docs-env/bin"
-export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+# export PATH="$PATH:~/Code/zon/docs-env/bin"
+# export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+export PATH="$(brew --prefix)/opt/python@3.12/libexec/bin:$PATH"
+export VAULT_ADDR=https://vault.ops.zeit.de
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/thomas.puppe/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomas.puppe/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/thomas.puppe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomas.puppe/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"

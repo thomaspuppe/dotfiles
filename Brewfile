@@ -47,7 +47,7 @@ cask "google-chrome@canary"
 # chromium is mandatory for testing purposes
 cask "chromium", args: {'no-quarantine': true}
 brew "geckodriver"
-cask "chromedriver"
+# cask "chromedriver" # Installed by selenium itself!?
 
 # IDE/Editors
 cask "sublime-text"

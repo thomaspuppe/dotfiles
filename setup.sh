@@ -24,3 +24,7 @@ echo  '\n'
 echo Install bundled software
 read -p "Press any key to continue... " -n1 -s
 # brew bundle
+
+# ======================================
+
+npm install -g git-split-diffs

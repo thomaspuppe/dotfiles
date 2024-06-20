@@ -1,5 +1,27 @@
 # Sublime Plugins
 
+- PackageControl ...
+
+- Git blame
+- (GitGutter ist mittlerweile schon included)
+
+```
+to review / old:
+
+Sublime
+Git blame.sublime-package           
+GitGutter.sublime-package           
+Jinja2.sublime-package              
+Package Control.sublime-package     
+Pretty JSON.sublime-package         
+Sass.sublime-package                
+SassSolution.sublime-package
+SublimeLinter-flake8.sublime-package
+SublimeLinter.sublime-package
+Svelte.sublime-package
+editorconfig-sublime.sublime-package
+xit!.sublime-package^
+
 - Git (kemayo)
 - GitGutter (jisaacks)
 
@@ -10,6 +32,7 @@
 - SublimeLinter-flake8
 - (Svelte)
 - (SVG Preview)
+```
 
 # VS Code Plugins
 
@@ -22,12 +45,6 @@ SQLite
 StandardJS
 Svelte for VSCode
 
-
-# Atom Plugins
-
-Theme: "One Light" for UI and Syntax. Fira Code Font.
-
-- language-markdown
 
 
 # Weitere
@@ -58,3 +75,10 @@ Theme: "One Light" for UI and Syntax. Fira Code Font.
 - HTML5 Outliner
 - Modify Headers for Google Chrome
 - Performance-Analyser
+
+Accessibility Insights for Web
+JSON Formatter
+ModHeader - Modify HTTP headers
+PerfectPixel by WellDoneCode (pixel perfect)
+uBlock Origin
+Web Vitals
