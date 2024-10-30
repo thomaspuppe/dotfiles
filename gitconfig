@@ -11,6 +11,20 @@
 	recurse = true
 [alias]
 	update = !git pull --rebase && git submodule update --init --recursive
+
+    zonbranch = "!f() { \
+        branch_number=$1; \
+        branch_slug=$2; \
+        branch_name=\"${branch_number}_${branch_slug}\"; \
+        changelog_file=\"./docs/changelog/${branch_number}.change\"; \
+        git switch -c $branch_name && \
+        mkdir -p ./docs/changelog && \
+        echo \"${branch_number}: ${branch_slug}\" > $changelog_file && \
+        nano $changelog_file && \
+        git add $changelog_file && \
+        git commit -m \"${branch_number}: Prepare changelog\"; \
+    }; f"
+
 [pager]
 	branch = false
 [core]
@@ -20,3 +34,5 @@
 	defaultBranch = main
 [blame]
 	ignoreRevsFile = .git-blame-ignore-revs
+[fetch]
+	prune = true
