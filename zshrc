@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/thomas.puppe/.oh-my-zsh"
@@ -161,6 +161,8 @@ alias zonserve="zonroot; bin/serve --reload"
 alias zonserve-staging="zonroot; bin/serve staging --reload"
 alias zonserve-production="zonroot; bin/serve production --reload"
 alias zontest="zonroot; bin/test"
+
+alias playwright-install='zonroot; work/app/bin/playwright install'
 
 alias excuse='wget -q -O - programmerexcuses.com | grep "center" | sed "s|</b>|-|g" | sed "s|<[^>]*>||g"'
 alias confetti='ssh -p 2222 ssh.caarlos0.dev' # https://github.com/maaslalani/confetty
