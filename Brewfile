@@ -52,6 +52,7 @@ brew "geckodriver"
 # IDE/Editors
 cask "sublime-text"
 cask "visual-studio-code"
+cask "cursor"
 cask "obsidian"
 
 # Version Control
@@ -106,10 +107,12 @@ brew "kubernetes-cli"
 brew "tfenv"
 brew "vault"
 #brew "kustomize" # :-( https://github.com/ZeitOnline/zeit.web/commit/069b233
+cask "pgadmin4"
 
 #cask "insomnia"
 #cask "insomnia-designer"
 #cask "responsively"
+brew "bruno"
 
 # zsh shell
 brew "zsh"
