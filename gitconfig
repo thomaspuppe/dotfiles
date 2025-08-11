@@ -32,6 +32,7 @@
 	editor = subl -n -w
 [init]
 	defaultBranch = main
+	templateDir = /Users/thomas.puppe/.config/git/templates
 [blame]
 	ignoreRevsFile = .git-blame-ignore-revs
 [fetch]

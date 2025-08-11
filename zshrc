@@ -209,3 +209,4 @@ if [ -f '/Users/thomas.puppe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; t
 
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"

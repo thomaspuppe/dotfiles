@@ -19,6 +19,7 @@ brew "mas"
 # e.g. in your .zshrc or .bashrc:
 # alias python=python3.12
 brew "python@3.12"
+brew "uv"
 
 # ZON dev environment
 brew "graphviz"
@@ -54,6 +55,7 @@ brew "geckodriver"
 cask "sublime-text"
 cask "visual-studio-code"
 cask "cursor"
+cask "zed"
 cask "obsidian"
 
 # Version Control
